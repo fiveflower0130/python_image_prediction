@@ -49,7 +49,7 @@ def read_root():
     return {"data": "Hello World"}
 
 
-@app.post("/image/prediction/")
+@app.post("/image/prediction")
 def get_image_prediction(body: PredictionInfo):
     '''取得AI image prediction的結果\n
 
@@ -73,5 +73,4 @@ def get_image_prediction(body: PredictionInfo):
 
 if __name__ == "__main__":
     # pytest.main(['--html=report/report.html', 'test_main.py'])
-    pytest.main()
     uvicorn.run(app, host="0.0.0.0", port=8007)
