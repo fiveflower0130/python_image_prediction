@@ -6,5 +6,6 @@ report
 .pytest_cache
 build
 dist
+idenprof
 
 *.spec
