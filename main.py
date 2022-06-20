@@ -7,10 +7,9 @@ from pydantic import BaseModel
 from image_prediction_mutithreading import TestPredictionThread
 
 app = FastAPI()
+
 image_prediction = TestPredictionThread()
-
 execution_path = os.getcwd()
-
 model_path = os.path.join(execution_path, "idenprof", "models")
 json_path = os.path.join(execution_path, "idenprof", "json")
 prediction_path = os.path.join(execution_path, "prediction_result")
