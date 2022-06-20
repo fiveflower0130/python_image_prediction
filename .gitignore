@@ -1,0 +1,10 @@
+__pycache__
+.vscode
+log
+prediction_result
+report
+.pytest_cache
+build
+dist
+
+*.spec
