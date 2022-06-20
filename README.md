@@ -5,17 +5,17 @@ Using imageAI to prediction image and make web API by FASTAPI.
 _© 2022 Dante
 ## Installation and Execution
 
+### environment
+python version: v3.7
+extension of folder idenprof: link `https://drive.google.com/drive/folders/1CW0j2uOgdNZU7iCe9odZbnkdosdMNMRV?usp=sharing`
+
 ### 1. Install pip package
-
-run `pip install -r requirement.txt`
-
-if pip not work please run `python -m pip install --upgrade pip`
+please run `python -m pip install --upgrade pip` first,
+then run `pip install -r requirement.txt`
 
 ### 2. Run FastAPI service
 run `python main.py` start FASTAPI service,
-
 or you can try another way with command line
-
 run `uvicorn main:app --reload --host 0.0.0.0 --port 8007`
 
 ### 3. Check API Document
