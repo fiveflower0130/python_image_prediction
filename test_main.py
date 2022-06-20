@@ -1,5 +1,5 @@
 from fastapi.testclient import TestClient
-from main_single import app
+from main import app
 
 client = TestClient(app)
 
@@ -23,9 +23,9 @@ def test_get_image_prediction():
         ]
     }
     headers = {"x-token": "coneofsilence"}
-    body = {}
-    # body = {"path": "L201030128_金面汙染_Total_35.png"}
-    # resp = client.post("/image/prediction/", json=body, headers=headers)
-    resp = client.get("/image/prediction?path=L201030128_金面汙染_Total_35.png", json=body, headers=headers)
+    body = {"path": "L201030128_金面汙染_Total_35.png"}
+    resp = client.post("/image/prediction", json=body, headers=headers)
+    # body = {}
+    # resp = client.get("/image/prediction?path=L201030128_金面汙染_Total_35.png", json=body, headers=headers)
     assert resp.status_code == 200
     assert resp.json() == expect
