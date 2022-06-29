@@ -25,3 +25,4 @@ or you can check it by txt file by `http://127.0.0.1:8000/redoc`
 ### 4. Package to private network
 If you want to run it on private network or close environment, run `pyinstaller -F main.py`
 then take `main.exe` from `dict` folder and copy `idenprof` at same folder.
+Note!: Before you package, please mark `pytest main()` in __main__, otherwise the .exe file would run fail.
