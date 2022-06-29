@@ -71,5 +71,5 @@ def get_image_prediction(body: PredictionInfo):
 
 
 if __name__ == "__main__":
-    # pytest.main(['--html=report/report.html', 'test_main.py'])
+    pytest.main(['--html=report/report.html', 'test_main.py'])
     uvicorn.run(app, host="0.0.0.0", port=8007)
